@@ -1,0 +1,49 @@
+source:
+  schema: shapes
+  table: pot48_2014_equipamientos_
+  columns:
+    - id
+    - geom
+    - cbml
+    - nombre
+    - tipo
+    - orden
+    - componente
+    - nivel
+    - categoria
+    - codigo
+    - cod_barrio
+    - cod_comuna
+    - nom_barrio
+    - fecha_adop
+    - fecha_actu
+    - shape_leng
+    - shape_area
+
+geometry_type: MULTIPOLYGON
+
+date_columns:
+  - fecha_adop
+  - fecha_actu
+
+target:
+  table: pot48_2014_equipamientos
+  prefix: spatial_data/equipamientos
+  schema:
+    id: integer
+    wkt_geometry: string
+    cbml: string
+    nombre: string
+    tipo: string
+    orden: string
+    componente: string
+    nivel: string
+    categoria: integer
+    codigo: string
+    cod_barrio: string
+    cod_comuna: string
+    nom_barrio: string
+    fecha_adop: string
+    fecha_actu: string
+    shape_leng: double
+    shape_area: double
